@@ -16,6 +16,7 @@ Those, we identify with our meta-monitoring tool [HappyFace4](https://hf.etp.kit
 - Since the script collects all logs, we also get all failed logs and can then select certain errors in the next step with the select_and_cleanup.sh script.
 
 `Usage: ./collect_logs.sh year(20XX) month(no prefixed 0) day(no prefixed 0) selection-wildcard(no "*" necessary)`
+
 `Example: ./collect_logs.sh 2024 1 24 pdmvserv_`
 
 ## select_and_cleanup.sh
@@ -25,6 +26,7 @@ Those, we identify with our meta-monitoring tool [HappyFace4](https://hf.etp.kit
 - **NOTE: In the last step, the script automatically removes empty directories. Be very careful that the directory you have selected is the correct one!!**
 
 `Usage: ./select_and_cleanup.sh directory specifier`
+
 `Example: ./select_and_cleanup.sh 2024124 localdomain` # for selecting HoreKa jobs, as we grep here for the hostname prefix that uniquely identifies HoreKa jobs - as an Example. We could also select for error codes or else!
 
 # Todo:
